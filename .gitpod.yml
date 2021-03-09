@@ -2,4 +2,4 @@ image: gitpod/workspace-dotnet
 
 tasks:
   - init: dotnet build
-    command: dotnet run
+    command: cd loginPage && dotnet watch run

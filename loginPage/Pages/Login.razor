@@ -1,0 +1,37 @@
+@page "/login"
+
+<h1>Login</h1>
+
+<p>Please signin to continue.</p>
+
+
+<form id="login">
+    <table id="login-table">
+        <tr>
+            <td class="login-label align="right">Username:</td>
+            <td class="login-input"><input type="text" @bind="@username"/></td>
+        </tr>
+        <tr>
+            <td class="login-label" align="right">Password:</td>
+            <td class="login-input"><input type="password" @bind="@password"/></td>
+        </tr>
+    </table>
+    <input type="button" value="submit"/>
+</form>
+
+
+@code
+{
+    private string username;
+    private string password;
+    private string message;
+    private void BtnSumbit_click()
+    {
+        //Username=username;
+        //Password=password;
+        //Response.Write("<script>alert('Hello');</script>");
+        //Alert("Hello " + Username);
+        //message=username;
+        //Response.Write("<p>Hello @message</p>");
+    }
+}
